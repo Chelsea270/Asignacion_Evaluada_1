@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="540.0" prefWidth="600.0" style="-fx-background-color: #F2E9EC;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.test.asignacion1.controller.RegistroEstudiantesController">
+<AnchorPane prefHeight="540.0" prefWidth="600.0" style="-fx-background-color: #E6E6FA;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.test.asignacion1.controller.RegistroEstudiantesController">
    <children>
       <Label layoutX="59.0" layoutY="14.0" text="Registro de Estudiantes">
          <font>
@@ -37,15 +37,15 @@
             <TextField fx:id="txtCorreo" promptText="Ingrese el correo electronico" GridPane.columnIndex="1" GridPane.rowIndex="4" />
          </children>
       </GridPane>
-      <Button fx:id="btnGuardar" layoutX="256.0" layoutY="238.0" mnemonicParsing="false" onAction="#guardarEstudiante" style="-fx-background-color: #C9DCE8;" text="Guardar">
+      <Button fx:id="btnGuardar" layoutX="256.0" layoutY="238.0" mnemonicParsing="false" onAction="#guardarEstudiante" style="-fx-background-color: #B0C4DE;" text="Guardar">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font></Button>
-      <Button fx:id="btnLimpiar" layoutX="328.0" layoutY="238.0" mnemonicParsing="false" onAction="#limpiarCampos" style="-fx-background-color: #C9DCE8#C9DCE8;" text="Limpiar">
+      <Button fx:id="btnLimpiar" layoutX="328.0" layoutY="238.0" mnemonicParsing="false" onAction="#limpiarCampos" style="-fx-background-color: #B0C4DE;" text="Limpiar">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font></Button>
-      <Button fx:id="btnInformacion" layoutX="393.0" layoutY="238.0" mnemonicParsing="false" onAction="#mostrarInformacion" style="-fx-background-color: #C9DCE8;" text="Información">
+      <Button fx:id="btnInformacion" layoutX="393.0" layoutY="238.0" mnemonicParsing="false" onAction="#mostrarInformacion" style="-fx-background-color: #B0C4DE;" text="Información">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font></Button>

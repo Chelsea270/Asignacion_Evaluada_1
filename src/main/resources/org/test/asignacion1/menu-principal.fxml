@@ -1,28 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="pnlPrincipal" onContextMenuRequested="#mostrarMenuContextual" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F2E9EC;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.test.asignacion1.controller.MenuPrincipalController">
-   <opaqueInsets>
-      <Insets left="20.0" />
-   </opaqueInsets>
+<AnchorPane fx:id="pnlPrincipal" onContextMenuRequested="#mostrarMenuContextual" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFF0F5;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.test.asignacion1.controller.MenuPrincipalController">
    <children>
-      <Label fx:id="lblBienvenido" layoutX="238.0" layoutY="182.0" text="Sistema de Catalogo.">
-         <font>
-            <Font name="System Bold Italic" size="14.0" />
-         </font>
-      </Label>
-      <MenuBar layoutY="2.0" prefHeight="26.0" prefWidth="600.0" style="-fx-background-color: #EAF2F#E7DCD78;">
+      <MenuBar fx:id="mnbPrincipal" layoutY="0.0" prefHeight="26.0" prefWidth="600.0" style="-fx-background-color: #E7DCD7;">
         <menus>
-          <Menu fx:id="mnuCatalogo" mnemonicParsing="false" text="Catálogo">
-            <items>
-              <MenuItem fx:id="miEstudiantes" mnemonicParsing="false" onAction="#abrirFormEstudiantes" text="Registro de Estudiantes." />
-                  <MenuItem fx:id="miPeliculas" mnemonicParsing="false" onAction="#abrirFormPeliculas" text="Registro de peliculas" />
-            </items>
-          </Menu>
           <Menu fx:id="mnuDesarrollo" mnemonicParsing="false" text="Desarrollador">
             <items>
               <MenuItem fx:id="miAcercaDe" mnemonicParsing="false" onAction="#mostrarDesarrolladora" text="Acerca de la desarrolladora" />
@@ -31,11 +16,27 @@
           <Menu fx:id="mnuAyuda" mnemonicParsing="false" text="Ayuda">
             <items>
               <MenuItem fx:id="miInstrucciones" mnemonicParsing="false" onAction="#mostrarInstrucciones" text="Instrucciones" />
-                  <MenuItem fx:id="miSalir" mnemonicParsing="false" onAction="#salirAplicacion" text="Salir" />
+              <MenuItem fx:id="miSalir" mnemonicParsing="false" onAction="#salirAplicacion" text="Salir" />
             </items>
           </Menu>
         </menus>
       </MenuBar>
-      <Label layoutX="134.0" layoutY="202.0" text="Has click derecho para ver cualquier parte del menu contextual" textFill="#b73535" />
+
+      <Label fx:id="lblBienvenido" alignment="CENTER" layoutX="0.0" layoutY="140.0" prefWidth="600.0" text="Sistema de Registro">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+
+      <Label fx:id="lblSubtitulo" alignment="CENTER" layoutX="0.0" layoutY="172.0" prefWidth="600.0" text="Sistema de Registro de Películas y Estudiantes" textFill="#6b5b5b">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Label>
+
+      <Button fx:id="btnRegistroEstudiantes" layoutX="140.0" layoutY="215.0" mnemonicParsing="false" onAction="#abrirFormEstudiantes" prefHeight="34.0" prefWidth="150.0" style="-fx-background-color: #D8BFD8;" text="Registro de Estudiantes" />
+
+      <Button fx:id="btnRegistroPeliculas" layoutX="310.0" layoutY="215.0" mnemonicParsing="false" onAction="#abrirFormPeliculas" prefHeight="34.0" prefWidth="150.0" style="-fx-background-color: #AFEEEE;" text="Registro de Películas" />
+
    </children>
 </AnchorPane>
